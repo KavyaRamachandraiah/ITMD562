@@ -9,7 +9,7 @@ function get_random_color() {
 }
 $(document).ready(function(){
 	var time = 0;
-	$("div").each(function() {
+	$("div ").each(function() {
 		$(this).children("p").css('color', get_random_color());
 		$(this).delay(time).fadeIn(3000);
 		time += 6000;
